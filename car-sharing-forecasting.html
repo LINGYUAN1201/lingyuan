@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="City-level booking duration and vehicle utilization forecasting for car sharing. Research project and original poster by Ling Yuan.">
+  <meta name="theme-color" content="#f7f9fc">
+  <title>Car Sharing Forecasting | Ling Yuan</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/news.js"></script>
+  <script defer src="assets/papers.js"></script>
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap header-inner">
+  <a href="index.html" class="brand" aria-label="Ling Yuan, home">
+    <span class="brand-mark" aria-hidden="true">L</span>
+    <span><span class="brand-name">Ling Yuan</span><span class="brand-role">Academic &amp; Research</span></span>
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="cv.html">CV</a></nav>
+</div></header>
+<main id="main">
+<section class="page-hero page-hero--project"><div class="wrap">
+  <a class="project-back" href="research.html"><span aria-hidden="true">←</span> Back to Research</a>
+  <p class="section-index">RESEARCH PROJECT / CAR SHARING</p>
+  <h1 class="project-title">Duration and Vehicle Utilization Forecasting for Car Sharing</h1>
+  <p class="lead">City-level forecasts of booking duration and vehicle utilisation to support shared-fleet planning.</p>
+  <div class="project-meta"><span>Data: Co-Wheels</span><span>Methods: ETS · SARIMA · Linear Regression</span><span>Forecast horizon: 30 days</span></div>
+</div></section>
+<div class="page-content page-content--project"><div class="wrap">
+  <section class="two-col detail-block project-detail-block" aria-labelledby="project-overview"><div><p class="side-label">01 / OVERVIEW</p></div><div>
+    <h2 id="project-overview">Project overview</h2>
+    <p>This research examines booking duration and vehicle utilisation in car-sharing services, using real-world operational data from Co-Wheels. It develops a city-level forecasting framework to distinguish planned bookings from realised use and to represent the effects of bookings that cross calendar days.</p>
+    <p>Automatic and manually specified ETS and SARIMA models, alongside linear regression, produce 30-day forecasts. Their accuracy and robustness are compared across overall and day-of-week evaluation slices.</p>
+  </div></section>
+  <section class="two-col detail-block project-detail-block" aria-labelledby="project-objectives"><div><p class="side-label">02 / OBJECTIVES</p></div><div>
+    <h2 id="project-objectives">Research objectives</h2>
+    <ul class="project-objective-list">
+      <li>Predict booking duration across cities to inform dynamic fleet allocation.</li>
+      <li>Estimate vehicle utilisation from reservation records and realised usage.</li>
+      <li>Improve forecasting through model selection, time-series decomposition and seasonality analysis.</li>
+    </ul>
+  </div></section>
+  <section class="two-col detail-block project-detail-block" aria-labelledby="project-methods"><div><p class="side-label">03 / METHODS</p></div><div>
+    <h2 id="project-methods">Methodology &amp; evaluation</h2>
+    <div class="project-method-list">
+      <div><h3>Data preparation</h3><p>City-level aggregation, proportional allocation of cross-day activity, temporal segmentation, outlier detection using Z-scores, seasonality-based imputation and structural-breakpoint identification.</p></div>
+      <div><h3>Forecasting models</h3><p>Automatic and manual ETS; automatic and manual SARIMA with weekly seasonal patterns; and linear regression incorporating trend and calendar effects.</p></div>
+      <div><h3>Assessment</h3><p>A 30-day forecast horizon, evaluated using mean absolute error (MAE), mean squared error (MSE) and root mean squared error (RMSE), for overall and day-of-week comparisons.</p></div>
+    </div>
+  </div></section>
+  <section class="two-col detail-block project-detail-block" aria-labelledby="project-findings"><div><p class="side-label">04 / FINDINGS</p></div><div>
+    <h2 id="project-findings">Selected findings</h2>
+    <p>The poster's model comparisons show that forecasting performance depends on the evaluation slice. Linear regression achieves the lowest overall MAE, while automatically selected SARIMA achieves the lowest day-of-week MAE. Automatic ETS delivers comparatively balanced performance across both evaluations.</p>
+    <div class="project-findings-grid">
+      <div><span class="project-result-label">Overall MAE</span><strong>4,237.80</strong><span>Linear Regression · lowest in overall comparison</span></div>
+      <div><span class="project-result-label">Day-of-week MAE</span><strong>1,248.47</strong><span>Auto SARIMA · lowest in day-of-week comparison</span></div>
+    </div>
+    <p class="small-note">These figures are reported in the original project poster's model comparison table.</p>
+  </div></section>
+  <section class="two-col project-detail-block project-poster-section" aria-labelledby="project-poster"><div><p class="side-label">05 / POSTER</p></div><div>
+    <div class="project-poster-heading"><h2 id="project-poster">Research poster</h2><a class="project-pdf-link" href="assets/car-sharing-forecasting-poster.pdf" target="_blank" rel="noopener noreferrer">Open full poster (PDF) <span aria-hidden="true">↗</span></a></div>
+    <a href="assets/car-sharing-forecasting-poster.pdf" class="poster-image-link" target="_blank" rel="noopener noreferrer" aria-label="Open full-size car sharing forecasting poster as a PDF"><img src="assets/car-sharing-poster-preview.webp" alt="Duration and Vehicle Utilization Forecasting for Car Sharing poster, showing model specification, forecasts, error table and Glasgow utilisation chart" width="2200" height="1702" loading="lazy"></a>
+    <div class="poster-caption"><p>Original research poster · Lancaster University Management School</p><a href="assets/car-sharing-forecasting-poster.pdf" download="Car_Sharing_Forecasting_Poster.pdf">Download poster</a></div>
+  </div></section>
+  <p class="project-credit">Research conducted using operational data provided by Co-Wheels, with academic supervision from Prof. Dong Li.</p>
+</div></div>
+</main>
+<footer class="site-footer site-footer--minimal"><div class="wrap">
+  <div class="footer-simple">
+    <div class="footer-contact"><a class="footer-mail-link" href="mailto:YuanL18@cardiff.ac.uk" aria-label="Email Ling Yuan" title="Email Ling Yuan"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a></div>
+    <nav class="footer-mini-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="cv.html">CV</a></nav>
+  </div>
+  <div class="footer-bottom"><p>© <span data-current-year>2026</span> Ling Yuan</p><p>Cardiff Business School · PARC Institute of Manufacturing, Logistics and Inventory · Cardiff University</p></div>
+</div></footer>
+</body></html>
